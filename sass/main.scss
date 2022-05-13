@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body * {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "./abstracts/mixins";
+@import "./abstracts/colors";
+@import "./base/base";
+@import "./layout/header";
+@import "./pages/home";
+@import "./layout/slider";
+@import "./pages/introduce";
+@import "./pages/product";
+@import "./pages/detailed_product";
+@import "./pages/new";
+@import "./pages/detailed_news";
+@import "./pages/contact";
+@import "./layout/footer";
+@import "./layout/btnScrollTop";

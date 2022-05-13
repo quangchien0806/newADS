@@ -1,0 +1,135 @@
+.detailed__news {
+  background-color: $color-hotline;
+  padding: 60px 0;
+}
+.detailed__new_all {
+  @include flex(start, space-between, wrap);
+  width: 100%;
+}
+.detailed {
+  width: 64%;
+  border-radius: 2px;
+}
+.content__detailed {
+  background-color: #fff;
+  padding-top: 26px;
+  padding-bottom: 68px;
+  margin-bottom: 16px;
+  .text__detailed {
+    margin: 0 30px;
+    .time {
+      font-size: 13px;
+      line-height: 15px;
+      color: #c4c4c4;
+      margin-bottom: 16px;
+    }
+    .info-detailed {
+      font-size: 30px;
+      line-height: 35px;
+      color: #000;
+      margin-bottom: 34px;
+    }
+    .text__new-detailed {
+      font-size: 17px;
+      line-height: 30px;
+      color: $color-text;
+      margin-bottom: 30px;
+    }
+  }
+  .img-detailed {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 32px;
+  }
+}
+.share {
+  @include flex(start, start);
+  background-color: #fff;
+  padding: 20px 30px;
+  .text-share {
+    font-size: 17px;
+    line-height: 24px;
+    color: #000;
+    margin-right: 17px;
+  }
+  .twitter {
+    margin-top: 4px;
+    color: #3cb8ee;
+    margin-right: 21px;
+  }
+  .facebook {
+    margin-top: 4px;
+    color: #3477c6;
+  }
+}
+.related__posts {
+  background-color: #fff;
+  width: 32%;
+  padding: 26px 30px;
+  .search__form {
+    @include flex(flex-center, space-between);
+    background-color: $color-background;
+    padding: 14px;
+    border: 1px solid $color-hotline;
+    border-radius: 2px;
+    margin-bottom: 21px;
+    .search__input {
+      border: none;
+      background-color: transparent;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-time-day;
+    }
+    .search__button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      i {
+        color: $color-text-top;
+      }
+    }
+  }
+  .info_posts {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 24px;
+  }
+}
+.list-post {
+  list-style: initial;
+  color: #406fb5;
+  margin-bottom: 34px;
+  margin-left: 20px;
+  .post-link {
+    font-size: 17px;
+    line-height: 24px;
+    color: #406fb5;
+    border-bottom: 1px solid $color-hotline;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.list-save {
+  list-style: initial;
+  margin-left: 20px;
+  .text-save {
+    font-size: 17px;
+    line-height: 24px;
+    color: $color-text;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .detailed {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .related__posts {
+    width: 100%;
+  }
+}

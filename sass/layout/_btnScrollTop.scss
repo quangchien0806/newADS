@@ -1,0 +1,33 @@
+.scrollUp {
+  .scrollUp__up {
+    border: 0;
+    position: fixed;
+    background-color: $color-moss-green;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 24px;
+    bottom: 60px;
+    right: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: all 0.4s;
+    opacity: 0;
+    border: 1px solid $color-hotline;
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .scrollUp {
+    .scrollUp__up {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
